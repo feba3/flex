@@ -19,11 +19,11 @@
 
     }
     .navbar ul{
-        text-align: right;
+        text-align: center;
     }
     .navbar li{
         display: inline-block;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         padding-right: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,9 +76,19 @@
         font-size: 30px;
         color: white;
     }
+    .select{
+            background-color:lightcyan;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding-right: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-style: none;
+        }
     @media screen and (max-width:992px){
         .navbar{
             flex-direction: left;
+            padding-right: 50px;
         }
         .footer{
             padding-top: 150%;
@@ -86,6 +96,7 @@
         html{
             height: 200%;
         }
+       
     }
 
 </style>
@@ -93,7 +104,14 @@
   <div class="navbar">
       <ul>
           <li>Home</li>
-          <li>About</li>
+          <li>
+              <select class="select">
+                  <option>About</option>
+                  <option>Mission</option>
+                  <option>Vision</option>
+                  </select>
+                  </li>
+    
           <li>Gallery</li>
           <li>Contact</li>
       </ul> 
